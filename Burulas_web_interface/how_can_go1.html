@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="burulas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery-clock-timepicker.min.js"></script>
+</head>
+<body>
+        <header id="head">
+            <div class="container">
+                <a href="#"><i class="fa-solid fa-angle-left"></i></a>
+                <h2>Nasıl Giderim</h2>
+                <a href="#"><i class="fa-solid fa-circle-question"></i></a>
+
+            </div>
+
+        </header>
+       <section class="main">
+            <div class="container2">
+                <div class="box">
+                    <div class="ustkutu">
+                        <div class="form">
+                            <i class="fas fa-map-marker-alt i1"></i>
+                            <input class="log "type="text" placeholder="Başlangıç">
+                        </div>
+                        <img src="icon.png" alt="icon">
+                        
+                        
+                        <div class="form">
+                            <i class="fas fa-map-marker-alt i2"></i>
+                            <input class="log" type="text" placeholder="Varış">
+                        </div>
+        
+        
+                    </div>
+                   
+        
+                    <div class="ciftkutu">
+                        <div class="kutucuk">
+        
+                            <i class="fa-regular fa-clock i3"></i>
+                            <input type="text" class="log2" id="clock" value="Kalkış-00:00">
+        
+                    </div>
+                        
+                        <button class="rota" type="submit">Rota Bul</button>
+        
+                    </div>
+                    <div id="myDIV">
+                        <button class="btn active">En yakın</button>
+                        <button class="btn">Min. yürüme</button>
+                        <button class="btn">Max.yürüme</button>
+                      
+                      </div>
+        
+                      <script>
+        
+                        var header = document.getElementById("myDIV");
+                        var btns = header.getElementsByClassName("btn");
+                        for (var i = 0; i < btns.length; i++) {
+                          btns[i].addEventListener("click", function() {
+                          var current = document.getElementsByClassName("active");
+                          current[0].className = current[0].className.replace(" active", "");
+                          this.className += " active";
+                          });
+                        }
+                        </script>
+        
+                        <script>
+                            $(document).ready(function(){
+                                $("#clock");
+                                $("#clock").clockTimePicker();
+        
+                        });
+                        </script>
+        
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+
+
+        </section> 
+
+
+        <footer class="footer">
+            <div class="flex-container">
+                <div class="solkutu" style="flex-grow: 4">
+                    <a href="index.html"><img class="logos" src="home.png"><p>Anasayfa</p></a>
+                    <a href="#"><img class="logos" src="id-card.png"><p>Kartlarım</p></a>
+                </div>
+                <div class="ortakutu"  style="flex-grow: 1"><div><img src="qr-code.png" alt="icon2"></div></div>
+                <div class="sagkutu" style="flex-grow: 4">
+                    <a href="#"><img class="logos" src="star.png"><p>Favoriler</p></a>
+                    <a href="#"><img class="logos" src="bell.png"><p>Alarmlar</p></a>
+                </div>
+              </div>
+            
+        </footer>
+       
+       
+       
+</body>
+</html>
