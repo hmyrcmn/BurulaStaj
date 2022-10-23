@@ -1,2 +1,4 @@
 # BurulaStaj
-my projects in burulaş internship "\n"### NETWORK CIHAZLARININ HABERLEŞMESİ BÖLÜMÜNDE BELİRTİLEN EKRAN GÖRÜNTÜSÜ ıssue kısmında ###
+my projects in burulaş internship '<br>'
+
+NETWORK CIHAZLARININ HABERLEŞMESİ BÖLÜMÜNDE BELİRTİLEN EKRAN GÖRÜNTÜSÜ ıssue kısmında !!!
